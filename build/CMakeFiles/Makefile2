@@ -90,7 +90,6 @@ all: robots/configs/stanford_pupper_config/all
 all: champ/champ_msgs/all
 all: robots/configs/stochlite_config/all
 all: robots/descriptions/unitree_ros/robots/a1_description/all
-all: abu_2019/all
 all: robots/descriptions/unitree_ros/robots/aliengo_description/all
 all: champ/champ_gazebo/all
 all: robots/descriptions/unitree_ros/robots/go1_description/all
@@ -151,7 +150,6 @@ preinstall: robots/configs/stanford_pupper_config/preinstall
 preinstall: champ/champ_msgs/preinstall
 preinstall: robots/configs/stochlite_config/preinstall
 preinstall: robots/descriptions/unitree_ros/robots/a1_description/preinstall
-preinstall: abu_2019/preinstall
 preinstall: robots/descriptions/unitree_ros/robots/aliengo_description/preinstall
 preinstall: champ/champ_gazebo/preinstall
 preinstall: robots/descriptions/unitree_ros/robots/go1_description/preinstall
@@ -217,7 +215,6 @@ clean: robots/configs/stanford_pupper_config/clean
 clean: champ/champ_msgs/clean
 clean: robots/configs/stochlite_config/clean
 clean: robots/descriptions/unitree_ros/robots/a1_description/clean
-clean: abu_2019/clean
 clean: robots/descriptions/unitree_ros/robots/aliengo_description/clean
 clean: champ/champ_gazebo/clean
 clean: robots/descriptions/unitree_ros/robots/go1_description/clean
@@ -318,24 +315,6 @@ MR-Robot/mr_robot_nav/clean: MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_
 MR-Robot/mr_robot_nav/clean: MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
 
 .PHONY : MR-Robot/mr_robot_nav/clean
-
-#=============================================================================
-# Directory level rules for directory abu_2019
-
-# Recursive "all" directory target.
-abu_2019/all:
-
-.PHONY : abu_2019/all
-
-# Recursive "preinstall" directory target.
-abu_2019/preinstall:
-
-.PHONY : abu_2019/preinstall
-
-# Recursive "clean" directory target.
-abu_2019/clean:
-
-.PHONY : abu_2019/clean
 
 #=============================================================================
 # Directory level rules for directory champ/champ

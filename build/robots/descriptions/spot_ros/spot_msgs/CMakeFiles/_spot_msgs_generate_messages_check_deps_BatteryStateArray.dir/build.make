@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/navaphat/project_ws/build
 include robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/progress.make
 
 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray:
-	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BatteryStateArray.msg spot_msgs/BatteryState:std_msgs/Header
+	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BatteryStateArray.msg std_msgs/Header:spot_msgs/BatteryState
 
 _spot_msgs_generate_messages_check_deps_BatteryStateArray: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray
 _spot_msgs_generate_messages_check_deps_BatteryStateArray: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build.make

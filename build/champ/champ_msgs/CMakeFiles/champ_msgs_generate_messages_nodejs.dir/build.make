@@ -76,8 +76,8 @@ champ/champ_msgs/CMakeFiles/champ_msgs_generate_messages_nodejs: /home/navaphat/
 
 /home/navaphat/project_ws/devel/share/gennodejs/ros/champ_msgs/msg/Imu.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/navaphat/project_ws/devel/share/gennodejs/ros/champ_msgs/msg/Imu.js: /home/navaphat/project_ws/src/champ/champ_msgs/msg/Imu.msg
-/home/navaphat/project_ws/devel/share/gennodejs/ros/champ_msgs/msg/Imu.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/navaphat/project_ws/devel/share/gennodejs/ros/champ_msgs/msg/Imu.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/navaphat/project_ws/devel/share/gennodejs/ros/champ_msgs/msg/Imu.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/navaphat/project_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from champ_msgs/Imu.msg"
 	cd /home/navaphat/project_ws/build/champ/champ_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/navaphat/project_ws/src/champ/champ_msgs/msg/Imu.msg -Ichamp_msgs:/home/navaphat/project_ws/src/champ/champ_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p champ_msgs -o /home/navaphat/project_ws/devel/share/gennodejs/ros/champ_msgs/msg
 
