@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/navaphat/project_ws/build
 include robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/progress.make
 
 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource:
-	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg spot_msgs/Lease:spot_msgs/LeaseOwner
+	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg spot_msgs/LeaseOwner:spot_msgs/Lease
 
 _spot_msgs_generate_messages_check_deps_LeaseResource: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource
 _spot_msgs_generate_messages_check_deps_LeaseResource: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/build.make

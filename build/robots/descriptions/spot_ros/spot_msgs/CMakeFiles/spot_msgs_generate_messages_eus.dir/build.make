@@ -89,22 +89,22 @@ robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eu
 
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/EStopStateArray.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/EStopStateArray.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopStateArray.msg
-/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/EStopStateArray.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/EStopStateArray.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg
+/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/EStopStateArray.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/navaphat/project_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from spot_msgs/EStopStateArray.msg"
 	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopStateArray.msg -Ispot_msgs:/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p spot_msgs -o /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg
 
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/FootStateArray.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/FootStateArray.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg
-/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/FootStateArray.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/FootStateArray.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/FootStateArray.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/navaphat/project_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from spot_msgs/FootStateArray.msg"
 	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg -Ispot_msgs:/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p spot_msgs -o /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg
 
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseArray.msg
-/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg
+/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/navaphat/project_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from spot_msgs/LeaseArray.msg"
 	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseArray.msg -Ispot_msgs:/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p spot_msgs -o /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg
@@ -139,8 +139,8 @@ robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eu
 
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/BehaviorFaultState.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/BehaviorFaultState.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFaultState.msg
-/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/BehaviorFaultState.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/BehaviorFaultState.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg
+/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/BehaviorFaultState.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/navaphat/project_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating EusLisp code from spot_msgs/BehaviorFaultState.msg"
 	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFaultState.msg -Ispot_msgs:/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p spot_msgs -o /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg
 
@@ -168,8 +168,8 @@ robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eu
 
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseResource.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseResource.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseResource.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseResource.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg
+/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/LeaseResource.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/navaphat/project_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating EusLisp code from spot_msgs/LeaseResource.msg"
 	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg -Ispot_msgs:/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p spot_msgs -o /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg
 
@@ -181,8 +181,8 @@ robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eu
 
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/SystemFaultState.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/SystemFaultState.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg
-/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/SystemFaultState.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/SystemFaultState.l: /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg
+/home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg/SystemFaultState.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/navaphat/project_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating EusLisp code from spot_msgs/SystemFaultState.msg"
 	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg -Ispot_msgs:/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p spot_msgs -o /home/navaphat/project_ws/devel/share/roseus/ros/spot_msgs/msg
 

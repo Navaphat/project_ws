@@ -29,17 +29,17 @@ add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopStateArray.msg" "std_msgs/Header:spot_msgs/EStopState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopStateArray.msg" "spot_msgs/EStopState:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg" "spot_msgs/FootState:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg" "geometry_msgs/Point:spot_msgs/FootState"
 )
 
 get_filename_component(_filename "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseArray.msg" "spot_msgs/Lease:spot_msgs/LeaseOwner:spot_msgs/LeaseResource"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseArray.msg" "spot_msgs/LeaseOwner:spot_msgs/Lease:spot_msgs/LeaseResource"
 )
 
 get_filename_component(_filename "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
@@ -69,7 +69,7 @@ add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" "std_msgs/Header:spot_msgs/BehaviorFault"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" "spot_msgs/BehaviorFault:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
@@ -94,7 +94,7 @@ add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg" "spot_msgs/Lease:spot_msgs/LeaseOwner"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg" "spot_msgs/LeaseOwner:spot_msgs/Lease"
 )
 
 get_filename_component(_filename "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
@@ -104,7 +104,7 @@ add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg" "std_msgs/Header:spot_msgs/SystemFault"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg" "spot_msgs/SystemFault:std_msgs/Header"
 )
 
 #
@@ -128,19 +128,19 @@ _generate_msg_cpp(spot_msgs
 _generate_msg_cpp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
@@ -176,7 +176,7 @@ _generate_msg_cpp(spot_msgs
 _generate_msg_cpp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
@@ -206,7 +206,7 @@ _generate_msg_cpp(spot_msgs
 _generate_msg_cpp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
@@ -218,7 +218,7 @@ _generate_msg_cpp(spot_msgs
 _generate_msg_cpp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 
@@ -297,19 +297,19 @@ _generate_msg_eus(spot_msgs
 _generate_msg_eus(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
@@ -345,7 +345,7 @@ _generate_msg_eus(spot_msgs
 _generate_msg_eus(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
@@ -375,7 +375,7 @@ _generate_msg_eus(spot_msgs
 _generate_msg_eus(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
@@ -387,7 +387,7 @@ _generate_msg_eus(spot_msgs
 _generate_msg_eus(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 
@@ -466,19 +466,19 @@ _generate_msg_lisp(spot_msgs
 _generate_msg_lisp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
@@ -514,7 +514,7 @@ _generate_msg_lisp(spot_msgs
 _generate_msg_lisp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
@@ -544,7 +544,7 @@ _generate_msg_lisp(spot_msgs
 _generate_msg_lisp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
@@ -556,7 +556,7 @@ _generate_msg_lisp(spot_msgs
 _generate_msg_lisp(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 
@@ -635,19 +635,19 @@ _generate_msg_nodejs(spot_msgs
 _generate_msg_nodejs(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
@@ -683,7 +683,7 @@ _generate_msg_nodejs(spot_msgs
 _generate_msg_nodejs(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
@@ -713,7 +713,7 @@ _generate_msg_nodejs(spot_msgs
 _generate_msg_nodejs(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
@@ -725,7 +725,7 @@ _generate_msg_nodejs(spot_msgs
 _generate_msg_nodejs(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 
@@ -804,19 +804,19 @@ _generate_msg_py(spot_msgs
 _generate_msg_py(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/EStopState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
@@ -852,7 +852,7 @@ _generate_msg_py(spot_msgs
 _generate_msg_py(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/BehaviorFault.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
@@ -882,7 +882,7 @@ _generate_msg_py(spot_msgs
 _generate_msg_py(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseResource.msg"
   "${MSG_I_FLAGS}"
-  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
@@ -894,7 +894,7 @@ _generate_msg_py(spot_msgs
 _generate_msg_py(spot_msgs
   "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg"
+  "/home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 

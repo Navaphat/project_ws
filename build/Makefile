@@ -1156,71 +1156,6 @@ contact_sensor/fast:
 .PHONY : contact_sensor/fast
 
 #=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_py
-
-# Build rule for target.
-nav_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_py
-.PHONY : nav_msgs_generate_messages_py
-
-# fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	$(MAKE) -f MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_nodejs
-
-# Build rule for target.
-nav_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_nodejs
-.PHONY : nav_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-nav_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
-.PHONY : nav_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_lisp
-
-# Build rule for target.
-nav_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_lisp
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_eus
-
-# Build rule for target.
-nav_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_eus
-.PHONY : nav_msgs_generate_messages_eus
-
-# fast build rule for target.
-nav_msgs_generate_messages_eus/fast:
-	$(MAKE) -f MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
-.PHONY : nav_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_cpp
-
-# Build rule for target.
-nav_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_cpp
-.PHONY : nav_msgs_generate_messages_cpp
-
-# fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make MR-Robot/mr_robot_nav/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
-
-#=============================================================================
 # Target rules for targets named _run_tests_anymal_c_simple_description
 
 # Build rule for target.
@@ -1663,82 +1598,43 @@ teleop_node/fast:
 .PHONY : teleop_node/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_EStopState
+# Target rules for targets named spot_msgs_genpy
 
 # Build rule for target.
-_spot_msgs_generate_messages_check_deps_EStopState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_EStopState
-.PHONY : _spot_msgs_generate_messages_check_deps_EStopState
+spot_msgs_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_genpy
+.PHONY : spot_msgs_genpy
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_EStopState/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_EStopState/fast
+spot_msgs_genpy/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build
+.PHONY : spot_msgs_genpy/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_BehaviorFaultState
+# Target rules for targets named spot_msgs_generate_messages_py
 
 # Build rule for target.
-_spot_msgs_generate_messages_check_deps_BehaviorFaultState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BehaviorFaultState
-.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFaultState
+spot_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_generate_messages_py
+.PHONY : spot_msgs_generate_messages_py
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast
+spot_msgs_generate_messages_py/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build
+.PHONY : spot_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_BatteryStateArray
+# Target rules for targets named spot_msgs_gennodejs
 
 # Build rule for target.
-_spot_msgs_generate_messages_check_deps_BatteryStateArray: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BatteryStateArray
-.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray
+spot_msgs_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_gennodejs
+.PHONY : spot_msgs_gennodejs
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_BatteryStateArray/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray/fast
-
-#=============================================================================
-# Target rules for targets named spot_msgs_gencpp
-
-# Build rule for target.
-spot_msgs_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_gencpp
-.PHONY : spot_msgs_gencpp
-
-# fast build rule for target.
-spot_msgs_gencpp/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build
-.PHONY : spot_msgs_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_LeaseOwner
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_LeaseOwner: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_LeaseOwner
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_LeaseOwner/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_LeaseArray
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_LeaseArray: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_LeaseArray
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_LeaseArray/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray/fast
+spot_msgs_gennodejs/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build
+.PHONY : spot_msgs_gennodejs/fast
 
 #=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_EStopStateArray
@@ -1754,45 +1650,6 @@ _spot_msgs_generate_messages_check_deps_EStopStateArray/fast:
 .PHONY : _spot_msgs_generate_messages_check_deps_EStopStateArray/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_SystemFault
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_SystemFault: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_SystemFault
-.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_SystemFault/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_WiFiState
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_WiFiState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_WiFiState
-.PHONY : _spot_msgs_generate_messages_check_deps_WiFiState
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_WiFiState/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_WiFiState/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_BehaviorFault
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_BehaviorFault: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BehaviorFault
-.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_BehaviorFault/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault/fast
-
-#=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_Metrics
 
 # Build rule for target.
@@ -1804,6 +1661,19 @@ _spot_msgs_generate_messages_check_deps_Metrics: cmake_check_build_system
 _spot_msgs_generate_messages_check_deps_Metrics/fast:
 	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_Metrics/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_BatteryStateArray
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_BatteryStateArray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BatteryStateArray
+.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_BatteryStateArray/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray/fast
 
 #=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_BatteryState
@@ -1845,30 +1715,212 @@ _spot_msgs_generate_messages_check_deps_PowerState/fast:
 .PHONY : _spot_msgs_generate_messages_check_deps_PowerState/fast
 
 #=============================================================================
-# Target rules for targets named spot_msgs_generate_messages_py
+# Target rules for targets named nav_msgs_generate_messages_py
 
 # Build rule for target.
-spot_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_generate_messages_py
-.PHONY : spot_msgs_generate_messages_py
+nav_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_py
+.PHONY : nav_msgs_generate_messages_py
 
 # fast build rule for target.
-spot_msgs_generate_messages_py/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build
-.PHONY : spot_msgs_generate_messages_py/fast
+nav_msgs_generate_messages_py/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named spot_msgs_genpy
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_LeaseArray
 
 # Build rule for target.
-spot_msgs_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_genpy
-.PHONY : spot_msgs_genpy
+_spot_msgs_generate_messages_check_deps_LeaseArray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_LeaseArray
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray
 
 # fast build rule for target.
-spot_msgs_genpy/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build
-.PHONY : spot_msgs_genpy/fast
+_spot_msgs_generate_messages_check_deps_LeaseArray/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_nodejs
+
+# Build rule for target.
+nav_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_nodejs
+.PHONY : nav_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+nav_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+.PHONY : nav_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named spot_msgs_genlisp
+
+# Build rule for target.
+spot_msgs_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_genlisp
+.PHONY : spot_msgs_genlisp
+
+# fast build rule for target.
+spot_msgs_genlisp/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build
+.PHONY : spot_msgs_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_FootStateArray
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_FootStateArray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_FootStateArray
+.PHONY : _spot_msgs_generate_messages_check_deps_FootStateArray
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_FootStateArray/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_FootStateArray/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_lisp
+
+# Build rule for target.
+nav_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_lisp
+.PHONY : nav_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nav_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_Lease
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_Lease: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_Lease
+.PHONY : _spot_msgs_generate_messages_check_deps_Lease
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_Lease/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_Lease/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_cpp
+
+# Build rule for target.
+nav_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_cpp
+.PHONY : nav_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nav_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_eus
+
+# Build rule for target.
+nav_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_eus
+.PHONY : nav_msgs_generate_messages_eus
+
+# fast build rule for target.
+nav_msgs_generate_messages_eus/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+.PHONY : nav_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_SystemFault
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_SystemFault: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_SystemFault
+.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_SystemFault/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_BehaviorFault
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_BehaviorFault: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BehaviorFault
+.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_BehaviorFault/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_WiFiState
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_WiFiState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_WiFiState
+.PHONY : _spot_msgs_generate_messages_check_deps_WiFiState
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_WiFiState/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_WiFiState/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_LeaseOwner
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_LeaseOwner: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_LeaseOwner
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_LeaseOwner/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner/fast
+
+#=============================================================================
+# Target rules for targets named spot_msgs_gencpp
+
+# Build rule for target.
+spot_msgs_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_gencpp
+.PHONY : spot_msgs_gencpp
+
+# fast build rule for target.
+spot_msgs_gencpp/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build
+.PHONY : spot_msgs_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_BehaviorFaultState
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_BehaviorFaultState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BehaviorFaultState
+.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFaultState
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_EStopState
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_EStopState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_EStopState
+.PHONY : _spot_msgs_generate_messages_check_deps_EStopState
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_EStopState/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_EStopState/fast
 
 #=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_Feedback
@@ -1910,19 +1962,6 @@ spot_msgs_generate_messages_eus/fast:
 .PHONY : spot_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_Lease
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_Lease: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_Lease
-.PHONY : _spot_msgs_generate_messages_check_deps_Lease
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_Lease/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_Lease/fast
-
-#=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_LeaseResource
 
 # Build rule for target.
@@ -1962,43 +2001,17 @@ spot_msgs_geneus/fast:
 .PHONY : spot_msgs_geneus/fast
 
 #=============================================================================
-# Target rules for targets named spot_msgs_generate_messages_cpp
+# Target rules for targets named spot_msgs_generate_messages_nodejs
 
 # Build rule for target.
-spot_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_generate_messages_cpp
-.PHONY : spot_msgs_generate_messages_cpp
+spot_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_generate_messages_nodejs
+.PHONY : spot_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-spot_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build
-.PHONY : spot_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_FootStateArray
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_FootStateArray: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_FootStateArray
-.PHONY : _spot_msgs_generate_messages_check_deps_FootStateArray
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_FootStateArray/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_FootStateArray/fast
-
-#=============================================================================
-# Target rules for targets named spot_msgs_genlisp
-
-# Build rule for target.
-spot_msgs_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_genlisp
-.PHONY : spot_msgs_genlisp
-
-# fast build rule for target.
-spot_msgs_genlisp/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build
-.PHONY : spot_msgs_genlisp/fast
+spot_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build
+.PHONY : spot_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named spot_msgs_generate_messages_lisp
@@ -2014,82 +2027,17 @@ spot_msgs_generate_messages_lisp/fast:
 .PHONY : spot_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named spot_msgs_generate_messages_nodejs
+# Target rules for targets named spot_msgs_generate_messages_cpp
 
 # Build rule for target.
-spot_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_generate_messages_nodejs
-.PHONY : spot_msgs_generate_messages_nodejs
+spot_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_generate_messages_cpp
+.PHONY : spot_msgs_generate_messages_cpp
 
 # fast build rule for target.
-spot_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build
-.PHONY : spot_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named spot_msgs_gennodejs
-
-# Build rule for target.
-spot_msgs_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 spot_msgs_gennodejs
-.PHONY : spot_msgs_gennodejs
-
-# fast build rule for target.
-spot_msgs_gennodejs/fast:
-	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build
-.PHONY : spot_msgs_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named trajectory_msgs_generate_messages_py
-
-# Build rule for target.
-trajectory_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_py
-.PHONY : trajectory_msgs_generate_messages_py
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_py/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
-.PHONY : trajectory_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named gazebo_msgs_generate_messages_py
-
-# Build rule for target.
-gazebo_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_py
-.PHONY : gazebo_msgs_generate_messages_py
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_py/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
-.PHONY : gazebo_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named trajectory_msgs_generate_messages_nodejs
-
-# Build rule for target.
-trajectory_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_nodejs
-.PHONY : trajectory_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
-.PHONY : trajectory_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named gazebo_msgs_generate_messages_lisp
-
-# Build rule for target.
-gazebo_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_lisp
-.PHONY : gazebo_msgs_generate_messages_lisp
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
-.PHONY : gazebo_msgs_generate_messages_lisp/fast
+spot_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build
+.PHONY : spot_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named trajectory_msgs_generate_messages_cpp
@@ -2101,60 +2049,8 @@ trajectory_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f champ/champ_base/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make champ/champ_base/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
 .PHONY : trajectory_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named gazebo_msgs_generate_messages_nodejs
-
-# Build rule for target.
-gazebo_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_nodejs
-.PHONY : gazebo_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
-.PHONY : gazebo_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named gazebo_msgs_generate_messages_eus
-
-# Build rule for target.
-gazebo_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_eus
-.PHONY : gazebo_msgs_generate_messages_eus
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_eus/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
-.PHONY : gazebo_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_eus
-
-# Build rule for target.
-std_srvs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named trajectory_msgs_generate_messages_eus
@@ -2166,229 +2062,8 @@ trajectory_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_eus/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f champ/champ_base/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make champ/champ_base/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
 .PHONY : trajectory_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_nodejs
-
-# Build rule for target.
-std_srvs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named gazebo_ros_gencfg
-
-# Build rule for target.
-gazebo_ros_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_gencfg
-.PHONY : gazebo_ros_gencfg
-
-# fast build rule for target.
-gazebo_ros_gencfg/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build
-.PHONY : gazebo_ros_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_cpp
-
-# Build rule for target.
-std_srvs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_eus
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_eus
-.PHONY : dynamic_reconfigure_generate_messages_eus
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_eus/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_py
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_py
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_py
-
-# Build rule for target.
-std_srvs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/std_srvs_generate_messages_py.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named trajectory_msgs_generate_messages_lisp
-
-# Build rule for target.
-trajectory_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_lisp
-.PHONY : trajectory_msgs_generate_messages_lisp
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
-.PHONY : trajectory_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_lisp
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_lisp
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_gencfg
-
-# Build rule for target.
-dynamic_reconfigure_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_gencfg
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_lisp
-
-# Build rule for target.
-std_srvs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_nodejs
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_nodejs
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named gazebo_msgs_generate_messages_cpp
-
-# Build rule for target.
-gazebo_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_cpp
-.PHONY : gazebo_msgs_generate_messages_cpp
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make MR-Robot/mr_robot_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
-.PHONY : gazebo_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named message_relay_node
-
-# Build rule for target.
-message_relay_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 message_relay_node
-.PHONY : message_relay_node
-
-# fast build rule for target.
-message_relay_node/fast:
-	$(MAKE) -f champ/champ_base/CMakeFiles/message_relay_node.dir/build.make champ/champ_base/CMakeFiles/message_relay_node.dir/build
-.PHONY : message_relay_node/fast
-
-#=============================================================================
-# Target rules for targets named quadruped_controller_node
-
-# Build rule for target.
-quadruped_controller_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 quadruped_controller_node
-.PHONY : quadruped_controller_node
-
-# fast build rule for target.
-quadruped_controller_node/fast:
-	$(MAKE) -f champ/champ_base/CMakeFiles/quadruped_controller_node.dir/build.make champ/champ_base/CMakeFiles/quadruped_controller_node.dir/build
-.PHONY : quadruped_controller_node/fast
-
-#=============================================================================
-# Target rules for targets named state_estimation
-
-# Build rule for target.
-state_estimation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 state_estimation
-.PHONY : state_estimation
-
-# fast build rule for target.
-state_estimation/fast:
-	$(MAKE) -f champ/champ_base/CMakeFiles/state_estimation.dir/build.make champ/champ_base/CMakeFiles/state_estimation.dir/build
-.PHONY : state_estimation/fast
-
-#=============================================================================
-# Target rules for targets named state_estimation_node
-
-# Build rule for target.
-state_estimation_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 state_estimation_node
-.PHONY : state_estimation_node
-
-# fast build rule for target.
-state_estimation_node/fast:
-	$(MAKE) -f champ/champ_base/CMakeFiles/state_estimation_node.dir/build.make champ/champ_base/CMakeFiles/state_estimation_node.dir/build
-.PHONY : state_estimation_node/fast
-
-#=============================================================================
-# Target rules for targets named message_relay
-
-# Build rule for target.
-message_relay: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 message_relay
-.PHONY : message_relay
-
-# fast build rule for target.
-message_relay/fast:
-	$(MAKE) -f champ/champ_base/CMakeFiles/message_relay.dir/build.make champ/champ_base/CMakeFiles/message_relay.dir/build
-.PHONY : message_relay/fast
 
 #=============================================================================
 # Target rules for targets named quadruped_controller
@@ -2404,6 +2079,110 @@ quadruped_controller/fast:
 .PHONY : quadruped_controller/fast
 
 #=============================================================================
+# Target rules for targets named message_relay
+
+# Build rule for target.
+message_relay: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 message_relay
+.PHONY : message_relay
+
+# fast build rule for target.
+message_relay/fast:
+	$(MAKE) -f champ/champ_base/CMakeFiles/message_relay.dir/build.make champ/champ_base/CMakeFiles/message_relay.dir/build
+.PHONY : message_relay/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_nodejs
+
+# Build rule for target.
+trajectory_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_nodejs
+.PHONY : trajectory_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f champ/champ_base/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make champ/champ_base/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+.PHONY : trajectory_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named state_estimation_node
+
+# Build rule for target.
+state_estimation_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 state_estimation_node
+.PHONY : state_estimation_node
+
+# fast build rule for target.
+state_estimation_node/fast:
+	$(MAKE) -f champ/champ_base/CMakeFiles/state_estimation_node.dir/build.make champ/champ_base/CMakeFiles/state_estimation_node.dir/build
+.PHONY : state_estimation_node/fast
+
+#=============================================================================
+# Target rules for targets named quadruped_controller_node
+
+# Build rule for target.
+quadruped_controller_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quadruped_controller_node
+.PHONY : quadruped_controller_node
+
+# fast build rule for target.
+quadruped_controller_node/fast:
+	$(MAKE) -f champ/champ_base/CMakeFiles/quadruped_controller_node.dir/build.make champ/champ_base/CMakeFiles/quadruped_controller_node.dir/build
+.PHONY : quadruped_controller_node/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_lisp
+
+# Build rule for target.
+trajectory_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_lisp
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f champ/champ_base/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make champ/champ_base/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+.PHONY : trajectory_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named state_estimation
+
+# Build rule for target.
+state_estimation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 state_estimation
+.PHONY : state_estimation
+
+# fast build rule for target.
+state_estimation/fast:
+	$(MAKE) -f champ/champ_base/CMakeFiles/state_estimation.dir/build.make champ/champ_base/CMakeFiles/state_estimation.dir/build
+.PHONY : state_estimation/fast
+
+#=============================================================================
+# Target rules for targets named message_relay_node
+
+# Build rule for target.
+message_relay_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 message_relay_node
+.PHONY : message_relay_node
+
+# fast build rule for target.
+message_relay_node/fast:
+	$(MAKE) -f champ/champ_base/CMakeFiles/message_relay_node.dir/build.make champ/champ_base/CMakeFiles/message_relay_node.dir/build
+.PHONY : message_relay_node/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_py
+
+# Build rule for target.
+trajectory_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_py
+.PHONY : trajectory_msgs_generate_messages_py
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_py/fast:
+	$(MAKE) -f champ/champ_base/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make champ/champ_base/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+.PHONY : trajectory_msgs_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named map_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -2415,6 +2194,84 @@ map_msgs_generate_messages_lisp: cmake_check_build_system
 map_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f robot_state_plugin/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make robot_state_plugin/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
 .PHONY : map_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_cpp
+
+# Build rule for target.
+map_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_cpp
+.PHONY : map_msgs_generate_messages_cpp
+
+# fast build rule for target.
+map_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
+.PHONY : map_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rviz_generate_messages_py
+
+# Build rule for target.
+rviz_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rviz_generate_messages_py
+.PHONY : rviz_generate_messages_py
+
+# fast build rule for target.
+rviz_generate_messages_py/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/rviz_generate_messages_py.dir/build.make robot_state_plugin/CMakeFiles/rviz_generate_messages_py.dir/build
+.PHONY : rviz_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_nodejs
+
+# Build rule for target.
+map_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_nodejs
+.PHONY : map_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+map_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make robot_state_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
+.PHONY : map_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rviz_generate_messages_lisp
+
+# Build rule for target.
+rviz_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rviz_generate_messages_lisp
+.PHONY : rviz_generate_messages_lisp
+
+# fast build rule for target.
+rviz_generate_messages_lisp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/rviz_generate_messages_lisp.dir/build.make robot_state_plugin/CMakeFiles/rviz_generate_messages_lisp.dir/build
+.PHONY : rviz_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_py
+
+# Build rule for target.
+std_srvs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/std_srvs_generate_messages_py.dir/build.make robot_state_plugin/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_nodejs
+
+# Build rule for target.
+std_srvs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make robot_state_plugin/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named shape_msgs_generate_messages_py
@@ -2443,17 +2300,17 @@ octomap_msgs_generate_messages_eus/fast:
 .PHONY : octomap_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named map_msgs_generate_messages_cpp
+# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
 
 # Build rule for target.
-map_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_cpp
-.PHONY : map_msgs_generate_messages_cpp
+dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
+.PHONY : dynamic_reconfigure_generate_messages_cpp
 
 # fast build rule for target.
-map_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
-.PHONY : map_msgs_generate_messages_cpp/fast
+dynamic_reconfigure_generate_messages_cpp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named map_msgs_generate_messages_py
@@ -2480,6 +2337,45 @@ object_recognition_msgs_generate_messages_eus: cmake_check_build_system
 object_recognition_msgs_generate_messages_eus/fast:
 	$(MAKE) -f robot_state_plugin/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make robot_state_plugin/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build
 .PHONY : object_recognition_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_cpp
+
+# Build rule for target.
+std_srvs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_eus
+
+# Build rule for target.
+map_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_eus
+.PHONY : map_msgs_generate_messages_eus
+
+# fast build rule for target.
+map_msgs_generate_messages_eus/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make robot_state_plugin/CMakeFiles/map_msgs_generate_messages_eus.dir/build
+.PHONY : map_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_msgs_generate_messages_cpp
+
+# Build rule for target.
+object_recognition_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_msgs_generate_messages_cpp
+.PHONY : object_recognition_msgs_generate_messages_cpp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named shape_msgs_generate_messages_nodejs
@@ -2534,6 +2430,32 @@ shape_msgs_generate_messages_eus/fast:
 .PHONY : shape_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named rviz_generate_messages_eus
+
+# Build rule for target.
+rviz_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rviz_generate_messages_eus
+.PHONY : rviz_generate_messages_eus
+
+# fast build rule for target.
+rviz_generate_messages_eus/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/rviz_generate_messages_eus.dir/build.make robot_state_plugin/CMakeFiles/rviz_generate_messages_eus.dir/build
+.PHONY : rviz_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named shape_msgs_generate_messages_cpp
+
+# Build rule for target.
+shape_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shape_msgs_generate_messages_cpp
+.PHONY : shape_msgs_generate_messages_cpp
+
+# fast build rule for target.
+shape_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
+.PHONY : shape_msgs_generate_messages_cpp/fast
+
+#=============================================================================
 # Target rules for targets named object_recognition_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -2558,19 +2480,6 @@ moveit_msgs_generate_messages_py: cmake_check_build_system
 moveit_msgs_generate_messages_py/fast:
 	$(MAKE) -f robot_state_plugin/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make robot_state_plugin/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
 .PHONY : moveit_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named moveit_msgs_generate_messages_nodejs
-
-# Build rule for target.
-moveit_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 moveit_msgs_generate_messages_nodejs
-.PHONY : moveit_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-moveit_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make robot_state_plugin/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
-.PHONY : moveit_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named moveit_msgs_generate_messages_eus
@@ -2599,6 +2508,58 @@ moveit_msgs_generate_messages_cpp/fast:
 .PHONY : moveit_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named std_srvs_generate_messages_lisp
+
+# Build rule for target.
+std_srvs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make robot_state_plugin/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named moveit_msgs_generate_messages_nodejs
+
+# Build rule for target.
+moveit_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_msgs_generate_messages_nodejs
+.PHONY : moveit_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+moveit_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make robot_state_plugin/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
+.PHONY : moveit_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_lisp
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_lisp
+.PHONY : dynamic_reconfigure_generate_messages_lisp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_lisp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make robot_state_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_eus
+
+# Build rule for target.
+std_srvs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make robot_state_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named object_recognition_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -2610,6 +2571,58 @@ object_recognition_msgs_generate_messages_nodejs: cmake_check_build_system
 object_recognition_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f robot_state_plugin/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make robot_state_plugin/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build
 .PHONY : object_recognition_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rviz_generate_messages_cpp
+
+# Build rule for target.
+rviz_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rviz_generate_messages_cpp
+.PHONY : rviz_generate_messages_cpp
+
+# fast build rule for target.
+rviz_generate_messages_cpp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/rviz_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/rviz_generate_messages_cpp.dir/build
+.PHONY : rviz_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_eus
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_eus
+.PHONY : dynamic_reconfigure_generate_messages_eus
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_eus/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make robot_state_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_gencfg
+
+# Build rule for target.
+dynamic_reconfigure_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_gencfg
+.PHONY : dynamic_reconfigure_gencfg
+
+# fast build rule for target.
+dynamic_reconfigure_gencfg/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make robot_state_plugin/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+.PHONY : dynamic_reconfigure_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named octomap_msgs_generate_messages_cpp
+
+# Build rule for target.
+octomap_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 octomap_msgs_generate_messages_cpp
+.PHONY : octomap_msgs_generate_messages_cpp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
+.PHONY : octomap_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named octomap_msgs_generate_messages_py
@@ -2664,134 +2677,17 @@ octomap_msgs_generate_messages_nodejs/fast:
 .PHONY : octomap_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named moveit_ros_manipulation_gencfg
+# Target rules for targets named dynamic_reconfigure_generate_messages_nodejs
 
 # Build rule for target.
-moveit_ros_manipulation_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 moveit_ros_manipulation_gencfg
-.PHONY : moveit_ros_manipulation_gencfg
+dynamic_reconfigure_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_nodejs
+.PHONY : dynamic_reconfigure_generate_messages_nodejs
 
 # fast build rule for target.
-moveit_ros_manipulation_gencfg/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make robot_state_plugin/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build
-.PHONY : moveit_ros_manipulation_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named octomap_msgs_generate_messages_cpp
-
-# Build rule for target.
-octomap_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 octomap_msgs_generate_messages_cpp
-.PHONY : octomap_msgs_generate_messages_cpp
-
-# fast build rule for target.
-octomap_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
-.PHONY : octomap_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named rviz_generate_messages_cpp
-
-# Build rule for target.
-rviz_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rviz_generate_messages_cpp
-.PHONY : rviz_generate_messages_cpp
-
-# fast build rule for target.
-rviz_generate_messages_cpp/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/rviz_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/rviz_generate_messages_cpp.dir/build
-.PHONY : rviz_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named map_msgs_generate_messages_nodejs
-
-# Build rule for target.
-map_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_nodejs
-.PHONY : map_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-map_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make robot_state_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
-.PHONY : map_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named rviz_generate_messages_lisp
-
-# Build rule for target.
-rviz_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rviz_generate_messages_lisp
-.PHONY : rviz_generate_messages_lisp
-
-# fast build rule for target.
-rviz_generate_messages_lisp/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/rviz_generate_messages_lisp.dir/build.make robot_state_plugin/CMakeFiles/rviz_generate_messages_lisp.dir/build
-.PHONY : rviz_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named object_recognition_msgs_generate_messages_cpp
-
-# Build rule for target.
-object_recognition_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_msgs_generate_messages_cpp
-.PHONY : object_recognition_msgs_generate_messages_cpp
-
-# fast build rule for target.
-object_recognition_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
-.PHONY : object_recognition_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named map_msgs_generate_messages_eus
-
-# Build rule for target.
-map_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_eus
-.PHONY : map_msgs_generate_messages_eus
-
-# fast build rule for target.
-map_msgs_generate_messages_eus/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make robot_state_plugin/CMakeFiles/map_msgs_generate_messages_eus.dir/build
-.PHONY : map_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named shape_msgs_generate_messages_cpp
-
-# Build rule for target.
-shape_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 shape_msgs_generate_messages_cpp
-.PHONY : shape_msgs_generate_messages_cpp
-
-# fast build rule for target.
-shape_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make robot_state_plugin/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
-.PHONY : shape_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named rviz_generate_messages_eus
-
-# Build rule for target.
-rviz_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rviz_generate_messages_eus
-.PHONY : rviz_generate_messages_eus
-
-# fast build rule for target.
-rviz_generate_messages_eus/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/rviz_generate_messages_eus.dir/build.make robot_state_plugin/CMakeFiles/rviz_generate_messages_eus.dir/build
-.PHONY : rviz_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named moveit_msgs_generate_messages_lisp
-
-# Build rule for target.
-moveit_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 moveit_msgs_generate_messages_lisp
-.PHONY : moveit_msgs_generate_messages_lisp
-
-# fast build rule for target.
-moveit_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make robot_state_plugin/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
-.PHONY : moveit_msgs_generate_messages_lisp/fast
+dynamic_reconfigure_generate_messages_nodejs/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make robot_state_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named rviz_generate_messages_nodejs
@@ -2807,17 +2703,43 @@ rviz_generate_messages_nodejs/fast:
 .PHONY : rviz_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named rviz_generate_messages_py
+# Target rules for targets named moveit_msgs_generate_messages_lisp
 
 # Build rule for target.
-rviz_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rviz_generate_messages_py
-.PHONY : rviz_generate_messages_py
+moveit_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_msgs_generate_messages_lisp
+.PHONY : moveit_msgs_generate_messages_lisp
 
 # fast build rule for target.
-rviz_generate_messages_py/fast:
-	$(MAKE) -f robot_state_plugin/CMakeFiles/rviz_generate_messages_py.dir/build.make robot_state_plugin/CMakeFiles/rviz_generate_messages_py.dir/build
-.PHONY : rviz_generate_messages_py/fast
+moveit_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make robot_state_plugin/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
+.PHONY : moveit_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_py
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_py
+.PHONY : dynamic_reconfigure_generate_messages_py
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_py/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make robot_state_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named moveit_ros_manipulation_gencfg
+
+# Build rule for target.
+moveit_ros_manipulation_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_ros_manipulation_gencfg
+.PHONY : moveit_ros_manipulation_gencfg
+
+# fast build rule for target.
+moveit_ros_manipulation_gencfg/fast:
+	$(MAKE) -f robot_state_plugin/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make robot_state_plugin/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build
+.PHONY : moveit_ros_manipulation_gencfg/fast
 
 #=============================================================================
 # Target rules for targets named moveit_rviz_plugin_render_tools
@@ -3142,11 +3064,6 @@ help:
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... contact_sensor"
-	@echo "... nav_msgs_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_nodejs"
-	@echo "... nav_msgs_generate_messages_lisp"
-	@echo "... nav_msgs_generate_messages_eus"
-	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... _run_tests_anymal_c_simple_description"
 	@echo "... run_tests_anymal_c_simple_description_roslaunch-check"
 	@echo "... run_tests_anymal_c_simple_description"
@@ -3181,95 +3098,94 @@ help:
 	@echo "... _mini_ros_generate_messages_check_deps_ContactData"
 	@echo "... mini_ros_genpy"
 	@echo "... teleop_node"
-	@echo "... _spot_msgs_generate_messages_check_deps_EStopState"
-	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFaultState"
-	@echo "... _spot_msgs_generate_messages_check_deps_BatteryStateArray"
-	@echo "... spot_msgs_gencpp"
-	@echo "... _spot_msgs_generate_messages_check_deps_LeaseOwner"
-	@echo "... _spot_msgs_generate_messages_check_deps_LeaseArray"
+	@echo "... spot_msgs_genpy"
+	@echo "... spot_msgs_generate_messages_py"
+	@echo "... spot_msgs_gennodejs"
 	@echo "... _spot_msgs_generate_messages_check_deps_EStopStateArray"
-	@echo "... _spot_msgs_generate_messages_check_deps_SystemFault"
-	@echo "... _spot_msgs_generate_messages_check_deps_WiFiState"
-	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFault"
 	@echo "... _spot_msgs_generate_messages_check_deps_Metrics"
+	@echo "... _spot_msgs_generate_messages_check_deps_BatteryStateArray"
 	@echo "... _spot_msgs_generate_messages_check_deps_BatteryState"
 	@echo "... spot_msgs_generate_messages"
 	@echo "... _spot_msgs_generate_messages_check_deps_PowerState"
-	@echo "... spot_msgs_generate_messages_py"
-	@echo "... spot_msgs_genpy"
+	@echo "... nav_msgs_generate_messages_py"
+	@echo "... _spot_msgs_generate_messages_check_deps_LeaseArray"
+	@echo "... nav_msgs_generate_messages_nodejs"
+	@echo "... spot_msgs_genlisp"
+	@echo "... _spot_msgs_generate_messages_check_deps_FootStateArray"
+	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... _spot_msgs_generate_messages_check_deps_Lease"
+	@echo "... nav_msgs_generate_messages_cpp"
+	@echo "... nav_msgs_generate_messages_eus"
+	@echo "... _spot_msgs_generate_messages_check_deps_SystemFault"
+	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFault"
+	@echo "... _spot_msgs_generate_messages_check_deps_WiFiState"
+	@echo "... _spot_msgs_generate_messages_check_deps_LeaseOwner"
+	@echo "... spot_msgs_gencpp"
+	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFaultState"
+	@echo "... _spot_msgs_generate_messages_check_deps_EStopState"
 	@echo "... _spot_msgs_generate_messages_check_deps_Feedback"
 	@echo "... _spot_msgs_generate_messages_check_deps_FootState"
 	@echo "... spot_msgs_generate_messages_eus"
-	@echo "... _spot_msgs_generate_messages_check_deps_Lease"
 	@echo "... _spot_msgs_generate_messages_check_deps_LeaseResource"
 	@echo "... _spot_msgs_generate_messages_check_deps_SystemFaultState"
 	@echo "... spot_msgs_geneus"
-	@echo "... spot_msgs_generate_messages_cpp"
-	@echo "... _spot_msgs_generate_messages_check_deps_FootStateArray"
-	@echo "... spot_msgs_genlisp"
-	@echo "... spot_msgs_generate_messages_lisp"
 	@echo "... spot_msgs_generate_messages_nodejs"
-	@echo "... spot_msgs_gennodejs"
-	@echo "... trajectory_msgs_generate_messages_py"
-	@echo "... gazebo_msgs_generate_messages_py"
-	@echo "... trajectory_msgs_generate_messages_nodejs"
-	@echo "... gazebo_msgs_generate_messages_lisp"
+	@echo "... spot_msgs_generate_messages_lisp"
+	@echo "... spot_msgs_generate_messages_cpp"
 	@echo "... trajectory_msgs_generate_messages_cpp"
-	@echo "... gazebo_msgs_generate_messages_nodejs"
-	@echo "... gazebo_msgs_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... trajectory_msgs_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... gazebo_ros_gencfg"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... trajectory_msgs_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... gazebo_msgs_generate_messages_cpp"
-	@echo "... message_relay_node"
-	@echo "... quadruped_controller_node"
-	@echo "... state_estimation"
-	@echo "... state_estimation_node"
-	@echo "... message_relay"
 	@echo "... quadruped_controller"
+	@echo "... message_relay"
+	@echo "... trajectory_msgs_generate_messages_nodejs"
+	@echo "... state_estimation_node"
+	@echo "... quadruped_controller_node"
+	@echo "... trajectory_msgs_generate_messages_lisp"
+	@echo "... state_estimation"
+	@echo "... message_relay_node"
+	@echo "... trajectory_msgs_generate_messages_py"
 	@echo "... map_msgs_generate_messages_lisp"
+	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... rviz_generate_messages_py"
+	@echo "... map_msgs_generate_messages_nodejs"
+	@echo "... rviz_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... shape_msgs_generate_messages_py"
 	@echo "... octomap_msgs_generate_messages_eus"
-	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... map_msgs_generate_messages_py"
 	@echo "... object_recognition_msgs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... map_msgs_generate_messages_eus"
+	@echo "... object_recognition_msgs_generate_messages_cpp"
 	@echo "... shape_msgs_generate_messages_nodejs"
 	@echo "... object_recognition_msgs_generate_messages_py"
 	@echo "... shape_msgs_generate_messages_lisp"
 	@echo "... shape_msgs_generate_messages_eus"
+	@echo "... rviz_generate_messages_eus"
+	@echo "... shape_msgs_generate_messages_cpp"
 	@echo "... object_recognition_msgs_generate_messages_lisp"
 	@echo "... moveit_msgs_generate_messages_py"
-	@echo "... moveit_msgs_generate_messages_nodejs"
 	@echo "... moveit_msgs_generate_messages_eus"
 	@echo "... moveit_msgs_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... moveit_msgs_generate_messages_nodejs"
+	@echo "... dynamic_reconfigure_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_eus"
 	@echo "... object_recognition_msgs_generate_messages_nodejs"
+	@echo "... rviz_generate_messages_cpp"
+	@echo "... dynamic_reconfigure_generate_messages_eus"
+	@echo "... dynamic_reconfigure_gencfg"
+	@echo "... octomap_msgs_generate_messages_cpp"
 	@echo "... octomap_msgs_generate_messages_py"
 	@echo "... moveit_ros_planning_gencfg"
 	@echo "... octomap_msgs_generate_messages_lisp"
 	@echo "... octomap_msgs_generate_messages_nodejs"
-	@echo "... moveit_ros_manipulation_gencfg"
-	@echo "... octomap_msgs_generate_messages_cpp"
-	@echo "... rviz_generate_messages_cpp"
-	@echo "... map_msgs_generate_messages_nodejs"
-	@echo "... rviz_generate_messages_lisp"
-	@echo "... object_recognition_msgs_generate_messages_cpp"
-	@echo "... map_msgs_generate_messages_eus"
-	@echo "... shape_msgs_generate_messages_cpp"
-	@echo "... rviz_generate_messages_eus"
-	@echo "... moveit_msgs_generate_messages_lisp"
+	@echo "... dynamic_reconfigure_generate_messages_nodejs"
 	@echo "... rviz_generate_messages_nodejs"
-	@echo "... rviz_generate_messages_py"
+	@echo "... moveit_msgs_generate_messages_lisp"
+	@echo "... dynamic_reconfigure_generate_messages_py"
+	@echo "... moveit_ros_manipulation_gencfg"
 	@echo "... moveit_rviz_plugin_render_tools"
 	@echo "... moveit_rviz_plugin_render_tools_autogen"
 	@echo "... moveit_robot_state_rviz_plugin"

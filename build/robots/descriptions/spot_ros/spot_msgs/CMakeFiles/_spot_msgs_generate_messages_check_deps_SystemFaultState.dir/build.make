@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/navaphat/project_ws/build
 include robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/progress.make
 
 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState:
-	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg std_msgs/Header:spot_msgs/SystemFault
+	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/SystemFaultState.msg spot_msgs/SystemFault:std_msgs/Header
 
 _spot_msgs_generate_messages_check_deps_SystemFaultState: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState
 _spot_msgs_generate_messages_check_deps_SystemFaultState: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/build.make

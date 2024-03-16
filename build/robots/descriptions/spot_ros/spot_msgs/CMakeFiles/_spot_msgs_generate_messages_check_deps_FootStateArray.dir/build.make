@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/navaphat/project_ws/build
 include robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/progress.make
 
 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray:
-	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg spot_msgs/FootState:geometry_msgs/Point
+	cd /home/navaphat/project_ws/build/robots/descriptions/spot_ros/spot_msgs && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/navaphat/project_ws/src/robots/descriptions/spot_ros/spot_msgs/msg/FootStateArray.msg geometry_msgs/Point:spot_msgs/FootState
 
 _spot_msgs_generate_messages_check_deps_FootStateArray: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray
 _spot_msgs_generate_messages_check_deps_FootStateArray: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build.make

@@ -112,17 +112,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -134,6 +123,17 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,94 +168,49 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule
 
 # Convenience name for target.
-_spot_msgs_generate_messages_check_deps_EStopState: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule
+spot_msgs_genpy: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule
 
-.PHONY : _spot_msgs_generate_messages_check_deps_EStopState
+.PHONY : spot_msgs_genpy
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_EStopState/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_EStopState/fast
+spot_msgs_genpy/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build
+.PHONY : spot_msgs_genpy/fast
 
 # Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-_spot_msgs_generate_messages_check_deps_BehaviorFaultState: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule
+spot_msgs_generate_messages_py: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule
 
-.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFaultState
+.PHONY : spot_msgs_generate_messages_py
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast
+spot_msgs_generate_messages_py/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build
+.PHONY : spot_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule
 
 # Convenience name for target.
-_spot_msgs_generate_messages_check_deps_BatteryStateArray: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule
+spot_msgs_gennodejs: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule
 
-.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray
+.PHONY : spot_msgs_gennodejs
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_BatteryStateArray/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray/fast
-
-# Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule
-
-# Convenience name for target.
-spot_msgs_gencpp: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule
-
-.PHONY : spot_msgs_gencpp
-
-# fast build rule for target.
-spot_msgs_gencpp/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build
-.PHONY : spot_msgs_gencpp/fast
-
-# Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule
-
-# Convenience name for target.
-_spot_msgs_generate_messages_check_deps_LeaseOwner: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule
-
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_LeaseOwner/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner/fast
-
-# Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule
-
-# Convenience name for target.
-_spot_msgs_generate_messages_check_deps_LeaseArray: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule
-
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_LeaseArray/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray/fast
+spot_msgs_gennodejs/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build
+.PHONY : spot_msgs_gennodejs/fast
 
 # Convenience name for target.
 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopStateArray.dir/rule:
@@ -273,51 +228,6 @@ _spot_msgs_generate_messages_check_deps_EStopStateArray/fast:
 .PHONY : _spot_msgs_generate_messages_check_deps_EStopStateArray/fast
 
 # Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule
-
-# Convenience name for target.
-_spot_msgs_generate_messages_check_deps_SystemFault: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule
-
-.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_SystemFault/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault/fast
-
-# Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule
-
-# Convenience name for target.
-_spot_msgs_generate_messages_check_deps_WiFiState: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule
-
-.PHONY : _spot_msgs_generate_messages_check_deps_WiFiState
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_WiFiState/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_WiFiState/fast
-
-# Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule
-
-# Convenience name for target.
-_spot_msgs_generate_messages_check_deps_BehaviorFault: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule
-
-.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_BehaviorFault/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault/fast
-
-# Convenience name for target.
 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/rule:
 	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/rule
 .PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/rule
@@ -331,6 +241,21 @@ _spot_msgs_generate_messages_check_deps_Metrics: robots/descriptions/spot_ros/sp
 _spot_msgs_generate_messages_check_deps_Metrics/fast:
 	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_Metrics/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule
+
+# Convenience name for target.
+_spot_msgs_generate_messages_check_deps_BatteryStateArray: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule
+
+.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_BatteryStateArray/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray/fast
 
 # Convenience name for target.
 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/rule:
@@ -378,34 +303,244 @@ _spot_msgs_generate_messages_check_deps_PowerState/fast:
 .PHONY : _spot_msgs_generate_messages_check_deps_PowerState/fast
 
 # Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-spot_msgs_generate_messages_py: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule
+nav_msgs_generate_messages_py: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 
-.PHONY : spot_msgs_generate_messages_py
+.PHONY : nav_msgs_generate_messages_py
 
 # fast build rule for target.
-spot_msgs_generate_messages_py/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build
-.PHONY : spot_msgs_generate_messages_py/fast
+nav_msgs_generate_messages_py/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule
 
 # Convenience name for target.
-spot_msgs_genpy: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule
+_spot_msgs_generate_messages_check_deps_LeaseArray: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule
 
-.PHONY : spot_msgs_genpy
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray
 
 # fast build rule for target.
-spot_msgs_genpy/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build
-.PHONY : spot_msgs_genpy/fast
+_spot_msgs_generate_messages_check_deps_LeaseArray/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_nodejs: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : nav_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+nav_msgs_generate_messages_nodejs/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+.PHONY : nav_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule
+
+# Convenience name for target.
+spot_msgs_genlisp: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule
+
+.PHONY : spot_msgs_genlisp
+
+# fast build rule for target.
+spot_msgs_genlisp/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build
+.PHONY : spot_msgs_genlisp/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule
+
+# Convenience name for target.
+_spot_msgs_generate_messages_check_deps_FootStateArray: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule
+
+.PHONY : _spot_msgs_generate_messages_check_deps_FootStateArray
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_FootStateArray/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_FootStateArray/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_lisp: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : nav_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nav_msgs_generate_messages_lisp/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule
+
+# Convenience name for target.
+_spot_msgs_generate_messages_check_deps_Lease: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule
+
+.PHONY : _spot_msgs_generate_messages_check_deps_Lease
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_Lease/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_Lease/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_cpp: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : nav_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nav_msgs_generate_messages_cpp/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_eus: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+
+.PHONY : nav_msgs_generate_messages_eus
+
+# fast build rule for target.
+nav_msgs_generate_messages_eus/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+.PHONY : nav_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule
+
+# Convenience name for target.
+_spot_msgs_generate_messages_check_deps_SystemFault: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule
+
+.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_SystemFault/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule
+
+# Convenience name for target.
+_spot_msgs_generate_messages_check_deps_BehaviorFault: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule
+
+.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_BehaviorFault/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule
+
+# Convenience name for target.
+_spot_msgs_generate_messages_check_deps_WiFiState: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule
+
+.PHONY : _spot_msgs_generate_messages_check_deps_WiFiState
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_WiFiState/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_WiFiState/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule
+
+# Convenience name for target.
+_spot_msgs_generate_messages_check_deps_LeaseOwner: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule
+
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_LeaseOwner/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule
+
+# Convenience name for target.
+spot_msgs_gencpp: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule
+
+.PHONY : spot_msgs_gencpp
+
+# fast build rule for target.
+spot_msgs_gencpp/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build
+.PHONY : spot_msgs_gencpp/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule
+
+# Convenience name for target.
+_spot_msgs_generate_messages_check_deps_BehaviorFaultState: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule
+
+.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFaultState
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast
+
+# Convenience name for target.
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule
+
+# Convenience name for target.
+_spot_msgs_generate_messages_check_deps_EStopState: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule
+
+.PHONY : _spot_msgs_generate_messages_check_deps_EStopState
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_EStopState/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_EStopState/fast
 
 # Convenience name for target.
 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/rule:
@@ -453,21 +588,6 @@ spot_msgs_generate_messages_eus/fast:
 .PHONY : spot_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule
-
-# Convenience name for target.
-_spot_msgs_generate_messages_check_deps_Lease: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule
-
-.PHONY : _spot_msgs_generate_messages_check_deps_Lease
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_Lease/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_Lease/fast
-
-# Convenience name for target.
 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/rule:
 	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/rule
 .PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/rule
@@ -513,49 +633,19 @@ spot_msgs_geneus/fast:
 .PHONY : spot_msgs_geneus/fast
 
 # Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-spot_msgs_generate_messages_cpp: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule
+spot_msgs_generate_messages_nodejs: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : spot_msgs_generate_messages_cpp
+.PHONY : spot_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-spot_msgs_generate_messages_cpp/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build
-.PHONY : spot_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule
-
-# Convenience name for target.
-_spot_msgs_generate_messages_check_deps_FootStateArray: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule
-
-.PHONY : _spot_msgs_generate_messages_check_deps_FootStateArray
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_FootStateArray/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_FootStateArray/fast
-
-# Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule
-
-# Convenience name for target.
-spot_msgs_genlisp: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule
-
-.PHONY : spot_msgs_genlisp
-
-# fast build rule for target.
-spot_msgs_genlisp/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build
-.PHONY : spot_msgs_genlisp/fast
+spot_msgs_generate_messages_nodejs/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build
+.PHONY : spot_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/rule:
@@ -573,34 +663,19 @@ spot_msgs_generate_messages_lisp/fast:
 .PHONY : spot_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule
+robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule
+.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-spot_msgs_generate_messages_nodejs: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule
+spot_msgs_generate_messages_cpp: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : spot_msgs_generate_messages_nodejs
+.PHONY : spot_msgs_generate_messages_cpp
 
 # fast build rule for target.
-spot_msgs_generate_messages_nodejs/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build
-.PHONY : spot_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule
-.PHONY : robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule
-
-# Convenience name for target.
-spot_msgs_gennodejs: robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule
-
-.PHONY : spot_msgs_gennodejs
-
-# fast build rule for target.
-spot_msgs_gennodejs/fast:
-	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build
-.PHONY : spot_msgs_gennodejs/fast
+spot_msgs_generate_messages_cpp/fast:
+	cd /home/navaphat/project_ws/build && $(MAKE) -f robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build.make robots/descriptions/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build
+.PHONY : spot_msgs_generate_messages_cpp/fast
 
 # Help Target
 help:
@@ -612,38 +687,43 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
-	@echo "... _spot_msgs_generate_messages_check_deps_EStopState"
-	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFaultState"
+	@echo "... spot_msgs_genpy"
+	@echo "... spot_msgs_generate_messages_py"
+	@echo "... spot_msgs_gennodejs"
+	@echo "... _spot_msgs_generate_messages_check_deps_EStopStateArray"
+	@echo "... _spot_msgs_generate_messages_check_deps_Metrics"
 	@echo "... test"
 	@echo "... _spot_msgs_generate_messages_check_deps_BatteryStateArray"
-	@echo "... spot_msgs_gencpp"
-	@echo "... _spot_msgs_generate_messages_check_deps_LeaseOwner"
-	@echo "... _spot_msgs_generate_messages_check_deps_LeaseArray"
-	@echo "... _spot_msgs_generate_messages_check_deps_EStopStateArray"
-	@echo "... rebuild_cache"
-	@echo "... _spot_msgs_generate_messages_check_deps_SystemFault"
-	@echo "... _spot_msgs_generate_messages_check_deps_WiFiState"
-	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFault"
-	@echo "... _spot_msgs_generate_messages_check_deps_Metrics"
 	@echo "... _spot_msgs_generate_messages_check_deps_BatteryState"
 	@echo "... spot_msgs_generate_messages"
 	@echo "... _spot_msgs_generate_messages_check_deps_PowerState"
-	@echo "... spot_msgs_generate_messages_py"
-	@echo "... spot_msgs_genpy"
+	@echo "... nav_msgs_generate_messages_py"
+	@echo "... _spot_msgs_generate_messages_check_deps_LeaseArray"
+	@echo "... nav_msgs_generate_messages_nodejs"
+	@echo "... spot_msgs_genlisp"
+	@echo "... _spot_msgs_generate_messages_check_deps_FootStateArray"
+	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... install/local"
+	@echo "... _spot_msgs_generate_messages_check_deps_Lease"
+	@echo "... nav_msgs_generate_messages_cpp"
+	@echo "... nav_msgs_generate_messages_eus"
+	@echo "... rebuild_cache"
+	@echo "... _spot_msgs_generate_messages_check_deps_SystemFault"
+	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFault"
+	@echo "... _spot_msgs_generate_messages_check_deps_WiFiState"
+	@echo "... _spot_msgs_generate_messages_check_deps_LeaseOwner"
+	@echo "... spot_msgs_gencpp"
+	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFaultState"
+	@echo "... _spot_msgs_generate_messages_check_deps_EStopState"
 	@echo "... _spot_msgs_generate_messages_check_deps_Feedback"
 	@echo "... _spot_msgs_generate_messages_check_deps_FootState"
 	@echo "... spot_msgs_generate_messages_eus"
-	@echo "... install/local"
-	@echo "... _spot_msgs_generate_messages_check_deps_Lease"
 	@echo "... _spot_msgs_generate_messages_check_deps_LeaseResource"
 	@echo "... _spot_msgs_generate_messages_check_deps_SystemFaultState"
 	@echo "... spot_msgs_geneus"
-	@echo "... spot_msgs_generate_messages_cpp"
-	@echo "... _spot_msgs_generate_messages_check_deps_FootStateArray"
-	@echo "... spot_msgs_genlisp"
-	@echo "... spot_msgs_generate_messages_lisp"
 	@echo "... spot_msgs_generate_messages_nodejs"
-	@echo "... spot_msgs_gennodejs"
+	@echo "... spot_msgs_generate_messages_lisp"
+	@echo "... spot_msgs_generate_messages_cpp"
 .PHONY : help
 
 
